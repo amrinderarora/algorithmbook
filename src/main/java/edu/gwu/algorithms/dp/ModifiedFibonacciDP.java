@@ -21,6 +21,6 @@ public class ModifiedFibonacciDP {
     public static void main(String[] args) {
         ModifiedFibonacciDP dp = new ModifiedFibonacciDP();
         System.out.println("value[20]: " + dp.calculateValue(20));
-        System.out.println("value[40]: " + dp.calculateValue(40));
+        System.out.println("value[90]: " + dp.calculateValue(90));
     }
 }
