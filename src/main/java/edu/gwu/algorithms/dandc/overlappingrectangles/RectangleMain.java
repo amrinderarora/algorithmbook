@@ -19,6 +19,7 @@ public class RectangleMain {
             maxScales[i] = Integer.parseInt(scanner.nextLine());
             counter++;
         }
+        scanner.close();
 
         int[] inputScales = new int[counter];
         for (int i = 0; i < counter; i++) {

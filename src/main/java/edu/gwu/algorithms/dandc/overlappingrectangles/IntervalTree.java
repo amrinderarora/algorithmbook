@@ -77,6 +77,7 @@ public class IntervalTree {
             return false;
         } else {
             Interval intersected = search(root, neo);
+            System.out.println("intersected: " + intersected);
             return true;
         }
     }
