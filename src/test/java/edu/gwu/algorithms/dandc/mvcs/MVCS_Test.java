@@ -27,6 +27,13 @@ public class MVCS_Test {
         tc.setArray(a3);
         tc.setValue(-1);
         testBattery.add(tc);
+
+    
+        int[] a4 = { 2, 2, 2, -100, 1, 1, 1, 1 };
+        tc = new MVCS_TestCase();
+        tc.setArray(a4);
+        tc.setValue(6);
+
     }
 
     /**
