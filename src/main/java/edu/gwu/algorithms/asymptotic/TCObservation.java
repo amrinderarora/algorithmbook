@@ -1,15 +1,20 @@
 package edu.gwu.algorithms.asymptotic;
 
 public class TCObservation {
-	private int problemInstance;
+    private int instanceSize;
 	private double observedTimeNanos;
 
-	public int getProblemInstance() {
-		return problemInstance;
+    public TCObservation(int instanceSize, long observedTimeNanos) {
+        this.instanceSize = instanceSize;
+        this.observedTimeNanos = observedTimeNanos;
+    }
+
+    public int getInstanceSize() {
+        return instanceSize;
 	}
 
-	public void setProblemInstance(int problemInstance) {
-		this.problemInstance = problemInstance;
+    public void setInstanceSize(int instanceSize) {
+        this.instanceSize = instanceSize;
 	}
 
 	public double getObservedTimeNanos() {

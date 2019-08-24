@@ -9,4 +9,7 @@ public class ComplexityValidator {
 		return true;
 	}
 
+    public boolean validateTheta(TCReport tcReport, ComplexityExpression cexpr) {
+        return true;
+    }
 }

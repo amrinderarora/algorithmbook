@@ -6,19 +6,14 @@ package edu.gwu.algorithms.asymptotic;
  * @author Amrinder Arora
  */
 public class ComplexityExpression {
-	double base = 1;
 	double exponent;
 	double[] logExponents;
 
-	public double getBase() {
-		return base;
-	}
+    public ComplexityExpression(double exponentArg) {
+        this.exponent = exponentArg;
+    }
 
-	public void setBase(double base) {
-		this.base = base;
-	}
-
-	public double getExponent() {
+    public double getExponent() {
 		return exponent;
 	}
 
