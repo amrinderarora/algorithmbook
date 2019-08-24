@@ -1,4 +1,4 @@
-package edu.gwu.algorithms.boxStack;
+package edu.gwu.algorithms.dp.boxStack;
 
 public class Box implements Comparable<Box>{
 	private final int d1;

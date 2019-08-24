@@ -1,4 +1,4 @@
-package edu.gwu.algorithms.boxStack;
+package edu.gwu.algorithms.dp.boxStack;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

@@ -1,4 +1,4 @@
-package edu.gwu.algorithms.boxStack;
+package edu.gwu.algorithms.dp.boxStack;
 import java.util.HashSet;
 //import java.util.List;
 import java.util.List;
