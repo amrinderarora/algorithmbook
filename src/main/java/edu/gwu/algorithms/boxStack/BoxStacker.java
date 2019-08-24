@@ -1,7 +1,7 @@
-package boxStack;
-import java.util.List;
+package edu.gwu.algorithms.boxStack;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 public class BoxStacker {
 	public static void main(String[] args) {
 			int count = 0;

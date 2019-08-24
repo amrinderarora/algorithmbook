@@ -1,7 +1,7 @@
-package boxStack;
-import java.util.*;
+package edu.gwu.algorithms.boxStack;
 import java.util.HashSet;
 //import java.util.List;
+import java.util.List;
 
 public class StackCreator {
 	List<Box> rotatedBoxes;

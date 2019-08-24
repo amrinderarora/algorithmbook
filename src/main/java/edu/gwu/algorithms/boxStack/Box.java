@@ -1,4 +1,4 @@
-package boxStack;
+package edu.gwu.algorithms.boxStack;
 
 public class Box implements Comparable<Box>{
 	private final int d1;
@@ -62,7 +62,8 @@ public class Box implements Comparable<Box>{
   //  public int getD1() {return d1;}
 //	public int getD2() {return d2;}
 //	public int getD3() {return d3;}
-	public int compareTo(Box x) {
+	@Override
+    public int compareTo(Box x) {
 		return x.getFace()[0] - this.getFace()[0];
 	}
 }
