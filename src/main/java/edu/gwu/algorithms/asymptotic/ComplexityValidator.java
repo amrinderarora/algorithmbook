@@ -1,14 +1,8 @@
 package edu.gwu.algorithms.asymptotic;
 
-import java.io.*;
-import java.util.*;
-import java.math.*;
-//To calculate math expression given by String: 
-//https://github.com/fasseg/exp4j/tree/master/src/main/java/net/objecthunter/exp4j
-import net.objecthunter.exp4j.*;
 
-
-
+import net.objecthunter.exp4j.Expression;
+import net.objecthunter.exp4j.ExpressionBuilder;
 
 public class ComplexityValidator {
     
@@ -109,8 +103,6 @@ public class ComplexityValidator {
         return GetMax(a) - GetMin(a);
     }
     public static double Correlation(double[] a, double[] b){
-        double[] aa = copy(a);
-        double[] bb = copy(b);
         double sa = 0;
         double sb = 0;
         double saa = 0;
@@ -303,14 +295,11 @@ public class ComplexityValidator {
         double[] a = {10,100,1000,10000,100000,1000000,10000000,100000000};
         double[] b = {5,100,1500,20000,250000,3000000,35000000,400000000};
         double[] aa = {1,5,10,50,100,500,1000,5000};
-        double[] d = {5,102,1505,20100,260000,3080000,34900000,401000000};
         ComplexityExpression expr = new ComplexityExpression("x+x^5");
         TCReport report = new TCReport(a,b);
-        //System.out.println(validateTheta(report,expr));
-        double[] c = {0.002506,0.125594,6.294627,315.478627,15811.3883,792446.5962,39716411.74,1990535853};
+		System.out.println(validateTheta(report, expr));
         double[] e = new double[8];
         double[] f = new double[8];
-        double[] g = copy(a,1,6);
         for(int i = 0; i < 8; i++){
             e[i] = expr.run(aa[i]);
             f[i] = Math.pow(1.1,aa[i]);
