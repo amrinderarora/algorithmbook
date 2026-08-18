@@ -1,9 +1,10 @@
-package edu.gwu.algorithms.dandc.convexhull;
+package edu.gwu.algorithms.dandc.compgeo;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class ConvexHull {
-    
     public List<Point> divideAndConquer(List<Point> points) {
         if (points.size() <= 3) {
             // base case: all points form the hull
@@ -78,3 +79,4 @@ public class ConvexHull {
                    (b.y - a.y) * (c.x - a.x);
     }
 }
+

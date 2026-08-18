@@ -1,6 +1,5 @@
 package edu.gwu.algorithms.asymptotic;
 
-
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
@@ -85,6 +84,15 @@ public class ComplexityValidator {
         }
         return Math.pow(Mean(b),0.5);
     }
+    public static double getStandardDeviation(double[] a) {
+        double mean = Mean(a);
+        double sumSquaredDiffs = 0;
+        for (int i = 0; i < a.length; i++) {
+            sumSquaredDiffs += Math.pow(a[i] - mean, 2);
+        }
+        return Math.sqrt(sumSquaredDiffs / a.length);
+    }
+
     public static double GetMax(double[] a){
         double max = 0;
         for (int i = 0; i < a.length; i++) {

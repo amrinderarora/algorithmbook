@@ -1,6 +1,8 @@
-import java.util.Random;
+package edu.gwu.algorithms.dandc.compgeo;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class ConvexHullTest {
     public static void main (String[] args) {

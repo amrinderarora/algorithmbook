@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 
 	<name>Algorithms Book</name>
-	<url>http://www.standardwisdom.com</url>
+	<url>http://www.notexponential.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,8 +22,8 @@
 				<version>3.1</version>
 				<configuration>
 					<verbose>false</verbose>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.23</source>
+					<target>1.23</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -36,11 +36,13 @@
 			<artifactId>exp4j</artifactId>
 			<version>0.4.8</version>
 		</dependency>
+		
 		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>3.18.0</version>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.20.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
